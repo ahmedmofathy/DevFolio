@@ -1,0 +1,251 @@
+:root {
+    --blue-color: #0078ff;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #F5F5F5;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.navbar a {
+  color: white;
+}
+.navbar-nav {
+  --bs-nav-link-hover-color: white;
+}
+.navbar {
+    --bs-bg-opacity: 0.90;
+}
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/hero-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+}
+.home h1 {
+  font-size: 4rem;
+}
+
+/* .typed-cursor {
+  opacity: 1;
+}
+.typed-cursor.typed-cursor--blink {
+  animation: typedjsBlink 0.7s infinite;
+  -webkit-animation: typedjsBlink 0.7s infinite;
+  animation: typedjsBlink 0.7s infinite;
+}
+@keyframes typedjsBlink {
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes typedjsBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+.about .progress {
+    --bs-border-radius: 0;
+    --bs-progress-height: 0.7rem;
+}
+.about h2::before, .contact h2::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 20%;
+    background-color: var(--blue-color);
+    bottom: -10px;
+}
+.line::before {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 35px;
+  background-color: var(--blue-color);
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.services .icon span{
+  border: 10px solid var(--blue-color);
+  transition: 0.5s;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .item:hover span {
+  background-color: var(--blue-color);
+  border-color: #BDC5CE;
+  color: white;
+}
+.services i {
+  font-size: 2rem;
+}
+.counter {
+  position: relative;
+  background-image: url(images/counters-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+}
+.counter .overlay, .testimonials .overlay, .contact .overlay {
+  position: absolute;
+  background-color: var(--blue-color);
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+}
+.counter .icon span {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid #CDE1F8;
+}
+.counter .icon span i {
+  font-size: 2rem;
+}
+.portfolio .icon, .links .icon {
+  border: 3px solid var(--blue-color);
+  transition: 0.5s;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue-color);
+}
+.portfolio .icon i, .links .icon i{
+  font-size: 1.5rem;
+}
+.portfolio .icon:hover, .links .icon:hover {
+  background-color: var(--blue-color);
+  border-color: #BDC5CE;
+  color: white;
+}
+.portfolio .text .blue {
+  color: var(--blue-color);
+}
+.portfolio .text span {
+  font-size: small;
+}
+.portfolio .item img {
+  transition: ease-in-out 0.6s;
+}
+.portfolio .item:hover img {
+  transform: scale(1.3);
+}
+.testimonials {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(images/overlay-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.testimonials .carousel-item {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+} 
+.blog .right img {
+  width: 35px;
+}
+.blog a {
+  color: black;
+  transition: 0.5s;
+}
+.blog a:hover {
+  color: var(--blue-color);
+}
+.blog .note {
+  background-color: var(--blue-color);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  margin-top: -12px;
+}
+.contact {
+  position: relative;
+  background-image: url(images/overlay-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: black;
+}
+.contact form input, textarea {
+  border-color: rgba(0, 0, 0, 0.2);
+  border-width: 1px;
+}
+.contact button {
+  border:3px solid transparent;
+  transition: 0.5s;
+}
+.contact button:hover {
+  border: 3px solid #BDC5CE;
+  background-color: #2d8bf7;
+}
+.contact i {
+  color: var(--blue-color);
+}
+.links .icon:hover i {
+  color: white;
+}
+.footer {
+  background-color: #0062D3;
+}
+.arrow {
+  width: 40px;
+  height: 40px;
+  background-color: var(--blue-color);
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  transition: 0.5s;
+}
+.arrow:hover {
+  background-color: #2c8bf8;
+  transform: translateY(-5px);
+}
